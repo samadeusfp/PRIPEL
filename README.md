@@ -21,3 +21,7 @@ The different parameters have the following meaning
 - epsilon: Strength of the differential privacy guarantee
 - n: Maximum prefix of considered traces for the trace-variant-query
 - k: Prunning parameter of the trace-variant-query. At least k traces must appear in a noisy variant count to be part of the result of the query
+
+
+## How to contact us
+PRIPEL was developed at the Process-driven Architecture group of Humboldt-Universität zu Berlin. If you want to contact us, just send us a mail at: fahrenks || hu-berlin.de
