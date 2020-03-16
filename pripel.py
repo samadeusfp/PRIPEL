@@ -4,7 +4,7 @@ from pm4py.objects.log.util import sampling
 from tracematcher import TraceMatcher as TraceMatcher
 from attributeAnonymizier import AttributeAnonymizier as AttributeAnonymizier
 from trace_variant_query import privatize_tracevariants
-import  atetime
+import datetime
 import sys
 
 def freq(lst):
@@ -19,13 +19,13 @@ def freq(lst):
 log_path = sys.argv[1]
 epsilon = float(sys.argv[2])
 N = int(sys.argv[3])
+k = int(sys.argv[4])
 
 sample_path = "/Users/stephan/Repositories/event_log_publishing_privacy/data_example/sample.xes"
 #P = round(len(log) * 0.01)
-P = 5
 
 
-new_ending = "_epsilon_" + str(epsilon) + "_P" + str(P) + "_anonymizied.xes"
+new_ending = "_epsilon_" + str(epsilon) + "_P" + str(k) + "_anonymizied.xes"
 
 result_log_path = log_path.replace(".xes",new_ending)
 
@@ -33,7 +33,7 @@ starttime = datetime.datetime.now()
 log = xes_import_factory.apply(log_path)
 
 starttime_tv_query = datetime.datetime.now()
-tv_query_log = privatize_tracevariants(log,epsilon,P,N)
+tv_query_log = privatize_tracevariants(log, epsilon, k, N)
 print(len(tv_query_log))
 endtime_tv_query = datetime.datetime.now()
 print("Time of TV Query: " + str((endtime_tv_query - starttime_tv_query)))
