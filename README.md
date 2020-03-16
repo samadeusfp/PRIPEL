@@ -1,5 +1,6 @@
 # PRIPEL
 
+PRIPEL (Privacy-preserving event log publishing with contextual information) is a framework to publish event logs that fulfill differential privacy.
 
 ## Requirements
 To run our algorithm you need the following Python packages:
