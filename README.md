@@ -24,7 +24,7 @@ The different parameters have the following meaning
 
 The program will produce a xes-file that contains an anonymised event log.
 
-Please note that certain combinations of n, k and epsilon can lead to very long runtime. If you experience such a runtime, try to higher values for k.
+Please note that certain combinations of n, k and epsilon can lead to very long runtime. If you experience such a runtime, try to higher values for k. Besides that it might help to use a greedy trace matching strategy by setting the parameter <greedy> of the function matchQueryToLog from the class TraceMatcher to true.
 
 Additionally, please note that some event logs contain attributes that are equivalent to a case id. For privacy reasons such attributes must be deleted from the anonymised log. We handle such attributes with a blacklist.
 
