@@ -18,9 +18,11 @@ python pripel.py <fileName> <epsilon> <n> <k>
 
 The different parameters have the following meaning
 - filename: Name of event log (xes-file) that shall be anonymised
-- epsilon: Strength of the differential privacy guarantee
-- n: Maximum prefix of considered traces for the trace-variant-query
-- k: Prunning parameter of the trace-variant-query. At least k traces must appear in a noisy variant count to be part of the result of the query
+- epsilon: Strength of the differential privacy guarantee. It must be a float
+- n: Maximum prefix of considered traces for the trace-variant-query. It must be an integer
+- k: Prunning parameter of the trace-variant-query. At least k traces must appear in a noisy variant count to be part of the result of the query. It must be an integer
+
+Please note that certain combinations of n,k and epsilon can lead to very long runtime. If you experience such a runtime, try to increase the value for k.
 
 
 ## How to contact us
