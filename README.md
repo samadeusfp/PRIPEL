@@ -22,8 +22,11 @@ The different parameters have the following meaning
 - n: Maximum prefix of considered traces for the trace-variant-query. It must be an integer
 - k: Prunning parameter of the trace-variant-query. At least k traces must appear in a noisy variant count to be part of the result of the query. It must be an integer
 
+The program will produce a xes-file that contains an anonymised event log.
+
 Please note that certain combinations of n, k and epsilon can lead to very long runtime. If you experience such a runtime, try to higher values for k.
 
+Additionally, please note that some event logs contain attributes that are equivalent to a case id. For privacy reasons such attributes must be deleted from the anonymised log. We handle such attributes with a blacklist.
 
 ## How to contact us
 PRIPEL was developed at the Process-driven Architecture group of Humboldt-Universität zu Berlin. If you want to contact us, just send us a mail at: fahrenks || hu-berlin.de
