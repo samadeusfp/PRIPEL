@@ -31,5 +31,25 @@ Please note that certain combinations of n, k and epsilon can lead to very long 
 ### Customization
 Additionally, please note that some event logs contain attributes that are equivalent to a case id. For privacy reasons such attributes must be deleted from the anonymised log. We handle such attributes with a blacklist.
 
+## Components
+
+### pripel.py
+This scripts run the overall PRIPEL-Framework. It takes in the event log (XES-File) performs the PRIPEL-based anonymisation and then saves the resulting anonmyised logs as an XES-File.
+
+### trace_variant_query.py
+Performs the trace-variant query on the input log. The query is based on the algorithm described in:
+https://link.springer.com/article/10.1007/s12599-019-00613-3
+
+
+### tracematcher.py
+This script mathces the cases from the input event log with the traces from the trace-variant-query. It uses standard assignment algroithm implemented in Numpy.
+
+### attributeAnonymizier.py
+In this script the contextual information of the matched log is anonymised.
+
+### levenshtein.py
+Contains implementation of the levenshtein-distance for traces. We use it in the tracematcher.py.
+
+
 ## How to contact us
 PRIPEL was developed at the Process-driven Architecture group of Humboldt-Universität zu Berlin. If you want to contact us, just send us a mail at: fahrenks || hu-berlin.de
