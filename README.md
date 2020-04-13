@@ -1,6 +1,16 @@
 # PRIPEL
 
-PRIPEL (Privacy-preserving event log publishing with contextual information) is a framework to publish event logs that fulfill differential privacy. We provide an implementation of PRETSA in Python 3. Our code is available under the MIT license.
+PRIPEL (Privacy-preserving event log publishing with contextual information) is a framework to publish event logs that fulfill differential privacy. We provide an implementation of PRETSA in Python 3. Our code is available under the MIT license. If you use it for academic purposes please cite our paper:
+```
+@inproceedings{Fahrenkrog-Petersen20,
+  author    = {Stephan A. Fahrenkrog{-}Petersen and
+               Han van der Aa and
+               Matthias Weidlich},
+  title     = {{PRIPEL:}  Privacy-Preserving Event Log Publishing Including Contextual Information},
+  year      = {2020},
+  booktitle = {Submitted to the International Conference on Business Process Management}
+}
+```
 
 ## Requirements
 To run our algorithm you need the following Python packages:
