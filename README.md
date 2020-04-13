@@ -6,7 +6,7 @@ PRIPEL (Privacy-preserving event log publishing with contextual information) is 
   author    = {Stephan A. Fahrenkrog{-}Petersen and
                Han van der Aa and
                Matthias Weidlich},
-  title     = {{PRIPEL:}  Privacy-Preserving Event Log Publishing Including Contextual Information},
+  title     = {PRIPEL:  Privacy-Preserving Event Log Publishing Including Contextual Information},
   year      = {2020},
   booktitle = {Submitted to the International Conference on Business Process Management}
 }
