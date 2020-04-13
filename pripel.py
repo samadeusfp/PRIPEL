@@ -21,11 +21,7 @@ epsilon = float(sys.argv[2])
 N = int(sys.argv[3])
 k = int(sys.argv[4])
 
-sample_path = "/Users/stephan/Repositories/event_log_publishing_privacy/data_example/sample.xes"
-#P = round(len(log) * 0.01)
-
-
-new_ending = "_epsilon_" + str(epsilon) + "_P" + str(k) + "_anonymizied.xes"
+new_ending = "_epsilon_" + str(epsilon) + "_k" + str(k) + "_anonymizied.xes"
 
 result_log_path = log_path.replace(".xes",new_ending)
 
